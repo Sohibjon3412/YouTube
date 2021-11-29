@@ -1,0 +1,91 @@
+.menyu {
+  position: absolute;
+  top: 65px;
+  left: 0;
+  width: 20%;
+  height: 100%;
+  background-color: $white-color;
+  border-radius: 4px;
+  overflow-y: auto;
+
+  &__list {
+    @include list-unstyled;
+    position: relative;
+
+    &::before {
+      content: "";
+      width: 107%;
+      height: 1px;
+      background-color: $border-color;
+      position: absolute;
+      bottom: 0;
+      left: -20px;
+    }
+  }
+
+  &__item {
+    padding: 10px 0;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $hover-color;
+    }
+  }
+
+  &__link {
+    @include flex;
+    font-size: 16px;
+    line-height: 29px;
+    text-decoration: none;
+    color: $text-color;
+    padding-left: 20px;
+
+    &:hover {
+      color: $text-color;
+    }
+  }
+  &__link svg {
+    margin-right: 16px;
+  }
+
+  &__text-sec {
+    margin-left: 20px;
+    padding: 10px 0;
+  }
+
+  &__text {
+    margin-right: 8px;
+    margin-bottom: 10px;
+    display: inline-block;
+    text-decoration: none;
+    letter-spacing: 0.5px;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: $text-color;
+    opacity: 0.8;
+
+    &:hover {
+      color: $text-color;
+    }
+  }
+
+  &__subtext {
+    font-size: 12px;
+    line-height: 1.8rem;
+    font-weight: 400;
+    color: $text-color;
+    opacity: 0.6;
+  }
+
+}
+.menyu-block {
+  display: block;
+}
+.menyu--active {
+  background-color: $active-color;
+
+  &:hover {
+    background-color: $active-color;
+  }
+}

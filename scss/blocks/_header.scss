@@ -1,0 +1,120 @@
+.header {
+
+  &__sec {
+    @include flex;
+    justify-content: space-between;
+    padding: 15px 0;
+  }
+
+  &__wrap {
+    @include flex;
+  }
+
+  &__menu-btn {
+    width: 40px;
+    height: 30px;
+    font-size: 20px;
+    background-color: transparent;
+    border: none;
+  }
+
+  &__logo {
+    width: 90px;
+    height: 20px;
+    margin-left: 15px;
+    margin-bottom: 6px;
+  }
+  &__inputs {
+    @include flex;
+  }
+
+  &__form {
+    width: 684px;
+    height: 38px;
+    background: $white-color;
+    border: 1px solid #C4C4C4;
+    border-radius: 2px;
+  }
+  &__search-inp {
+    width: 90%;
+    height: 100%;
+    border: none;
+    outline-color: transparent;
+    font-weight: 400;
+    line-height: 24px;
+    padding: 0 7px;
+    
+  }
+
+  &__search-btn {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    height: 95%;
+    width: 64px;
+    border-left: 1px solid #C4C4C4;
+    background-color: $button-bg;
+  }
+
+  &__microphone {
+    border: none;
+    background-color: transparent;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    margin-left: 10px;
+  }
+  &__btn {
+    width: 40px;
+    height: 40px;
+    border: none;
+    background-color: transparent;
+  }
+  &__user-btn img {
+    border-radius: 50%;
+  }
+}
+.search2 {
+  display: none;
+}
+
+@media screen and (max-width: 1100px) {
+  .header__form {
+    width: 500px;
+  }
+  .header__search-inp {
+    width: 86%;
+  }
+}
+@media screen and (max-width: 910px) {
+  .header__form {
+    width: 400px;
+  }
+  .header__search-inp {
+    width: 82%;
+  }
+}
+@media screen and (max-width: 800px) {
+  .header__form {
+    width: 70px;
+    border: none;
+  }
+  .header__search-inp {
+    display: none;
+  }
+  .header__search-btn {
+    background-color: transparent;
+    border: none;
+    display: none;
+  }
+  .header__microphone {
+    display: none;
+  }
+  .search2 {
+    width: 40px;
+    display: block;
+  }
+  .header__user-sec {
+    @include flex;
+  }
+}
