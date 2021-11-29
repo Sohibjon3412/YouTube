@@ -1,0 +1,28 @@
+.cam-modal {
+  width: 160px;
+  height: 100px;
+  position: absolute;
+  top: 50px;
+  right: 30px;
+  @include list-unstyled;
+  background-color: $white-color;
+  filter: drop-shadow(0px 4px 24px rgba(0, 0, 0, 0.08));
+  border-radius: 4px;
+  display: none;
+
+  &__item {
+    @include flex;
+    padding: 10px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $hover-color;
+    }
+  }
+  &__item svg {
+    margin-right: 15px;
+  }
+}
+.cam-modal-block {
+  display: block;
+}

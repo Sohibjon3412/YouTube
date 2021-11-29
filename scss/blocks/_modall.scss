@@ -119,5 +119,13 @@
 .modal-block {
   display: block;
 }
-
+.modall-close {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  display: none;
+}
+.modall-block {
+  display: block !important;
+}
 
