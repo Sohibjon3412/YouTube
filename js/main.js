@@ -12,10 +12,13 @@ const elVoiceSearchBtn = document.querySelector('.header__microphone');
 const elVoiceSearch = document.querySelector('.search-modal');
 const elModalBg = document.querySelector('.search-modal__bg');
 const elModalClose = document.querySelector('.search-modal__btn');
+const elHero = document.querySelector('.hero');
 
 elUser.addEventListener('click', ()=>{
   elModall.classList.toggle('modal-block');
   elModallClose.classList.toggle('modall-block');
+  elService.classList.remove('service-block');
+  elCamModal.classList.remove('cam-modal-block')
 })
 elModallClose.addEventListener('click', ()=> {
   elModall.classList.toggle('modal-block');
@@ -23,12 +26,15 @@ elModallClose.addEventListener('click', ()=> {
 })
 elMenyuBtn.addEventListener('click', ()=> {
   elmenyu.classList.toggle('sm-menyu');
+  elHero.classList.toggle('hero-width');
 })
 elCamBtn.addEventListener('click', ()=> {
   elCamModal.classList.toggle('cam-modal-block');
+  elService.classList.remove('service-block');
 })
 elCubBtn.addEventListener('click', ()=> {
   elService.classList.toggle('service-block');
+  elCamModal.classList.remove('cam-modal-block')
 })
 elVoiceSearchBtn.addEventListener('click', ()=> {
   elVoiceSearch.classList.toggle('search-modal__block');

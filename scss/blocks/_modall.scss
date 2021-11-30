@@ -9,6 +9,7 @@
   border-radius: 4px;
   overflow-y: auto;
   display: none;
+  z-index: 1000;
 
   &__user {
     width: 100%;

@@ -15,7 +15,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
   <!------- FONTS ------->
   <!------- STYLE LINK ------->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
+  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
   <link rel="stylesheet" href="css/main.min.css">
   <!------- STYLE LINK ------->
 </head>
@@ -23,7 +24,7 @@
   <header class="header">
     <span class="search-modal__bg"></span>
     <span class="modall-close"></span>
-    <div class="header__container container-fluid">
+    <div class="header__container container-fluid row">
       <div class="header__sec">
         <div class="header__wrap">
           <button class="header__menu-btn"><i class="fal fa-bars"></i></button>
@@ -386,13 +387,179 @@
           </ul>
         </section>
         <section class="hero">
-  
+          <div class="hero__tags tags">
+            <ul class="tags__list" >
+              <li class="tags__item">
+                <a class="tags__link tags__link--active" href="#">All</a>
+              </li>
+              <li class="tags__item">
+                <a class="tags__link" href="#">Mixes</a>
+              </li>
+              <li class="tags__item">
+                <a class="tags__link" href="#">Music</a>
+              </li>
+              <li class="tags__item">
+                <a class="tags__link" href="#">Deep house</a>
+              </li>
+              <li class="tags__item">
+                <a class="tags__link" href="#">JavaScript</a>
+              </li>
+              <li class="tags__item">
+                <a class="tags__link" href="#">Deep house</a>
+              </li>
+              <li class="tags__item">
+                <a class="tags__link" href="#">Computer program</a>
+              </li>
+              <li class="tags__item">
+                <a class="tags__link" href="#">Beats</a>
+              </li>
+              <li class="tags__item">
+                <a class="tags__link" href="#">Mixes</a>
+              </li>
+              <li class="tags__item">
+                <a class="tags__link" href="#">Chill-out music</a>
+              </li>
+              <li class="tags__item">
+                <a class="tags__link" href="#">Deep house</a>
+              </li>
+              <li class="tags__item">
+                <a class="tags__link" href="#">Arabic Music</a>
+              </li>
+              <li class="tags__item">
+                <a class="tags__link" href="#">Mixes</a>
+              </li>
+            </ul>
+          </div>
+          <div class="videos">
+            <ul class="videos__list">
+              <li class="videos__item">
+                <a class="videos__link" href="#">
+                  <img class="videos__img" src="media/img/cover1.jpg" alt="img">
+                  <div class="videos__wrap">
+                    <img class="videos__avatar" src="media/img/avatar1.png" alt="img">
+                    <div class="videos__text-sec">
+                      <h2 class="videos__title">TWICE "Alcohol-Free" M/V
+
+                      </h2>
+                      <p class="videos__text">JYP Entertainment</p>
+                      <p class="videos__text">130M views • 1 Month ago</p>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="videos__item">
+                <a class="videos__link" href="#">
+                  <img class="videos__img" src="media/img/cover2.jpg" alt="img">
+                  <div class="videos__wrap">
+                    <img class="videos__avatar" src="media/img/avatar2.png" alt="img">
+                    <div class="videos__text-sec">
+                      <h2 class="videos__title">Abbot - Visão de Futuro
+                        (trap sp)</h2>
+                      <p class="videos__text">Abbot</p>
+                      <p class="videos__text">130M views • 1 Month ago</p>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="videos__item">
+                <a class="videos__link" href="#">
+                  <img class="videos__img" src="media/img/cover3.jpg" alt="img">
+                  <div class="videos__wrap">
+                    <img class="videos__avatar" src="media/img/avatar3.png" alt="img">
+                    <div class="videos__text-sec">
+                      <h2 class="videos__title">Luedji Luna - Bom Mesmo É Estar Debaixo D'Água (Álbum Visual)</h2>
+                      <p class="videos__text">Luedji Luna</p>
+                      <p class="videos__text">130M views • 1 Month ago</p>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="videos__item">
+                <a class="videos__link" href="#">
+                  <img class="videos__img" src="media/img/cover4.jpg" alt="img">
+                  <div class="videos__wrap">
+                    <img class="videos__avatar" src="media/img/avatar4.png" alt="img">
+                    <div class="videos__text-sec">
+                      <h2 class="videos__title">Kanye West Sunday Service - "Father Stretch My Hands"</h2>
+                      <p class="videos__text">Kanye West</p>
+                      <p class="videos__text">130M views • 1 Month ago</p>
+                    </div>
+                  </div>
+                </a>
+              </li>
+            </ul>
+            <ul class="videos__list">
+              <li class="videos__item">
+                <a class="videos__link" href="#">
+                  <img class="videos__img" src="media/img/cover1.jpg" alt="img">
+                  <div class="videos__wrap">
+                    <img class="videos__avatar" src="media/img/avatar1.png" alt="img">
+                    <div class="videos__text-sec">
+                      <h2 class="videos__title">TWICE "Alcohol-Free" M/V
+
+                      </h2>
+                      <p class="videos__text">JYP Entertainment</p>
+                      <p class="videos__text">130M views • 1 Month ago</p>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="videos__item">
+                <a class="videos__link" href="#">
+                  <img class="videos__img" src="media/img/cover2.jpg" alt="img">
+                  <div class="videos__wrap">
+                    <img class="videos__avatar" src="media/img/avatar2.png" alt="img">
+                    <div class="videos__text-sec">
+                      <h2 class="videos__title">Abbot - Visão de Futuro
+                        (trap sp)</h2>
+                      <p class="videos__text">Abbot</p>
+                      <p class="videos__text">130M views • 1 Month ago</p>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="videos__item">
+                <a class="videos__link" href="#">
+                  <img class="videos__img" src="media/img/cover3.jpg" alt="img">
+                  <div class="videos__wrap">
+                    <img class="videos__avatar" src="media/img/avatar3.png" alt="img">
+                    <div class="videos__text-sec">
+                      <h2 class="videos__title">Luedji Luna - Bom Mesmo É Estar Debaixo D'Água (Álbum Visual)</h2>
+                      <p class="videos__text">Luedji Luna</p>
+                      <p class="videos__text">130M views • 1 Month ago</p>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="videos__item">
+                <a class="videos__link" href="#">
+                  <img class="videos__img" src="media/img/cover4.jpg" alt="img">
+                  <div class="videos__wrap">
+                    <img class="videos__avatar" src="media/img/avatar4.png" alt="img">
+                    <div class="videos__text-sec">
+                      <h2 class="videos__title">Kanye West Sunday Service - "Father Stretch My Hands"</h2>
+                      <p class="videos__text">Kanye West</p>
+                      <p class="videos__text">130M views • 1 Month ago</p>
+                    </div>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
         </section>
       </div>
     </div>
   </main>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
   <script src="js/main.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-  
+  <script>
+    $('.tags__list').slick({
+      infinite: true,
+      speed: 200,
+      slidesToShow: 1,
+      variableWidth: true
+    });
+  </script>
 </body>
 </html>

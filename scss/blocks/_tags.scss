@@ -1,0 +1,89 @@
+.tags {
+
+  &__list {
+    @include flex;
+    @include list-unstyled;
+    justify-content: space-between;
+    height: 60px;
+    position: relative;
+    border-bottom: 1px solid $border-color;
+    border-top: 1px solid $border-color;
+  }
+
+  &__item {
+    height: 40px;
+    padding: 7px 5px;
+    
+  }
+
+  &__btn {
+    width: 40px;
+    background-color: $white-color;
+    border: none;
+    font-size: 25px;
+  }
+
+  &__link {
+    background: rgba(196, 196, 196, 0.4);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 16px;
+    padding: 7px 12px;
+    font-size: 14px;
+    line-height: 16px;
+    color: #282828;
+    text-decoration: none;
+
+    &:hover {
+      color: #282828;
+      background: rgba(196, 196, 196, 0.609);
+    }
+  }
+  &__link--active {
+    background-color: #282828;
+    color: #fff;
+
+    &:hover {
+      background-color: #282828;
+      color: #fff;
+    }
+  }
+}
+.slick-next {
+  border: none;
+  position: relative;
+  background-color: #fff;
+
+  &::before {
+    content: "\f054";
+    font-family: "Font Awesome 5 Pro"; font-weight: 900;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    background-color: #fff;
+  }
+}
+.slick-prev {
+  border: none;
+  position: relative;
+  background-color: #fff;
+  width: 50px;
+  color: #000;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  
+
+  &::before {
+    content: "\f053";
+    font-family: "Font Awesome 5 Pro"; font-weight: 900;
+    position: absolute;
+    top: 0;
+    left: 0px;
+    width: 19px;
+    background-color: #fff;
+    text-indent: 0;
+    white-space:normal;
+    overflow: auto;
+  }
+}
